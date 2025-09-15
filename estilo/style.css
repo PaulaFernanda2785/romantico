@@ -19,7 +19,7 @@ body{
     padding: 0px 10px 0px 10px;
     background-color: black;
     background-image: url('/imagens/imagem-fundo.jpg');
-    background-position: top left;
+    background-position: center left;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -55,6 +55,85 @@ footer {
     background-color: rgba(0, 0, 0, 0.523);
     text-align: center;
     height: 40px
+}
+
+section {
+    display: flex;
+    background-color: white;
+    justify-content: left;
+    align-items: center;
+    padding: 0px 0px 0px 20px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+section > p{
+    font-family: var(--font03);
+    line-height: 2em;
+    font-size: 1.5em;
+}
+
+section.normal{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.662);
+}
+
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.279);
+    color: white;
+    background-attachment: fixed;
+}
+
+section#img01{
+    background-image: url('/imagens/imagem-001.jpeg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#img02{
+    background-image: url('/imagens/imagem-002.jpg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header a, footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width:500px) {
+    body{
+        padding: 0px;
+        background-position: top center;
+    }
+    main{
+        max-width: 400px;
+    }
+    section{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    section > p{
+        font-size: 1em;
+    }
+    #img01{
+        background-position: left center;
+    }
+    #img02{
+        background-position: left center;
+    }
+    footer >p{
+        font-size: 0.8em;
+    }
 }
 
 footer > p{
