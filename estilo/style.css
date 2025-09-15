@@ -8,77 +8,57 @@
     --font02:"Anton", sans-serif;
     --font03:"Petit Formal Script", cursive;
 }
+
 *{
     margin: 0px;
     padding: 0px;
 }
-html, body{
-    font-family:  var(--font01);
+
+body{
+    font-family: var(--font01);
+    padding: 0px 10px 0px 10px;
     background-color: black;
     background-image: url('/imagens/imagem-fundo.jpg');
-    background-position: center center;
+    background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
-header{
-    background-color: rgba(0, 0, 0, 0.425);
-    max-width: 1000px;
-    padding: 10px;
-    text-align: center;
-    margin: auto;
-    height: 30vh;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.407);
-    color: white;
-}
-header > h1 {
-    font-family: var(--font02);
-    font-variant: small-caps;
-    padding-top: 80px;
-    font-size: 4em;
-    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.495);
-    
-}
-header > p{
-    font-size: 1.3em;
-    padding-bottom: 50px;
-}
-header a , footer a {
-    text-decoration: none;
-    color: white;
-}
-header a:hover , footer a:hover{
-    text-decoration: underline;
-} 
+
 main {
-    max-width: 1000px;
     margin: auto;
-    padding: 10px;
-    color: white;
-    font-size: 2em;
-}
-section{
-    font-family: var(--font03);
-    font-variant: small-caps;
-    height: 80vh;
-    display: flex;
-    justify-content:left;
-    align-items: center;
-    line-height: 2em;
-    padding-left: 30px;
-    font-size: 1.4em;
-}
-@media (max-width: 950px){
-    section {
-        font-size: 5vw;
-    }
-}
-footer{
-    background-color: rgba(0, 0, 0, 0.425);
-    color: white;
     max-width: 1000px;
-    padding: 10px;
-    margin: auto;
+    background-color: rgba(0, 0, 0, 0.336);
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.523);
     text-align: center;
-    font-size: 1.1em;
+    height: 200px
+}
+
+header > h1{
+    font-family: var(--font02);
+    font-size: 3em;
+    text-shadow:  3px 3px 10px rgba(0, 0, 0, 0.371);
+    color: white;
+    padding-top: 50px;
+}
+
+header > p{
+    color: white;
+    padding-bottom: 50px;
+    font-size: 1em;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.523);
+    text-align: center;
+    height: 40px
+}
+
+footer > p{
+    color: white;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
 }
