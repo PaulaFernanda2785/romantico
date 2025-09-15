@@ -108,7 +108,7 @@ header a, footer a{
 header a:hover, footer a:hover{
     text-decoration: underline;
 }
-
+/*
 @media (max-width:500px) {
     body{
         padding: 0px;
@@ -135,7 +135,7 @@ header a:hover, footer a:hover{
         font-size: 0.8em;
     }
 }
-
+*/
 footer > p{
     color: white;
     text-align: center;
