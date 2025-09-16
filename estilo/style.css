@@ -18,7 +18,7 @@ body{
     font-family: var(--font01);
     padding: 0px 10px 0px 10px;
     background-color: rgba(0, 0, 0, 0.223);
-    background-image: url('/imagens/imagem-fundo.jpg');
+    background-image: url('../imagens/imagem-fundo.jpg');
     background-position: center left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -86,14 +86,14 @@ section.imagem{
 }
 
 section#img01{
-    background-image: url('/imagens/imagem-001.jpeg');
+    background-image: url('../imagens/imagem-001.jpeg');
     background-position: right center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 section#img02{
-    background-image: url('/imagens/imagem-002.jpg');
+    background-image: url('../imagens/imagem-002.jpg');
     background-position: right center;
     background-repeat: no-repeat;
     background-size: cover;
